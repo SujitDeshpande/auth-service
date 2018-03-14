@@ -1,0 +1,21 @@
+info:
+  component: Auth Server
+
+management.security.enabled: false
+
+encrypt:
+  failOnError: false
+  key: abcdef
+
+# The below configuration keystore and security needs to be commented for enabling SSL
+keystore:
+  password: password
+security:
+  user:
+    password: password
+
+spring:
+  application:
+    name: auth-server
+  profiles:
+    active: local
